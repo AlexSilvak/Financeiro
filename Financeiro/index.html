@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+
+
+        <div class="a"> <!-- Wrapper class goes here -->
+            <div class="card">
+                <img class="card__img" src="" alt="">
+                <h4 class="card__subtitle">CONTROLE FINANCEIRO  INDRIVE</h4>
+                
+                
+            </div>
+            <table>
+                <th>
+                    <td>Descrição
+                        <ul>
+                            <li><select name="lista" id="lista">
+                                <option value="Combustível">Combustível</option>
+                                <option value="Taxa">Taxa</option>
+                                <option value="Receita">Receita</option>
+                            </select></li>
+                            <li><select name="lista" id="lista">
+                                <option value="Combustível">Combustível</option>
+                                <option value="Taxa">Taxa</option>
+                                <option value="Receita">Receita</option>
+                            </select></li>
+                            <li><select name="lista" id="lista">
+                                <option value="Combustível">Combustível</option>
+                                <option value="Taxa">Taxa</option>
+                                <option value="Receita">Receita</option>
+                            </select></li>
+                          
+                           
+
+                        </ul>
+                    </td>
+                </th>
+                <th>
+                    <td>Datas
+                        <ul>
+                            <li><input type="date" name="data" id="data"></li>
+                            <li><input type="date" name="data" id="data"></li>
+                            <li><input type="date" name="data" id="data"></li>
+                           
+
+                        </ul>
+                    </td>
+                </th>
+                <th>
+                    <td>Valores
+                        <ul>
+                            <li><input type="number" name="combustivel" id="combustivel"></li>
+                            <li><input type="number" name="taxa" id="taxa"></li>
+                            <li><input type="number" name="receita" id="receita"></li>
+                            
+                           
+                           
+                        </ul>
+                        
+                    </td>
+                  
+                    
+                </th>
+                
+            </table>
+           
+           
+        </div>
+        
+        <th>
+            <td>Valores
+                <ul>
+                        <div id="total"></div> 
+                    
+                   
+                   
+                </ul>
+                
+            </td>
+          
+            
+        </th>
+        <button type="submit" onclick="calcular()"> Calcular</button>  
+        <script src="./main.js">
+           
+        </script>
+</body>
+</html>
