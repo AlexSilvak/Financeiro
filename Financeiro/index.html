@@ -21,25 +21,20 @@
                 
                 
             </div>
-            <table>
+            <table id="table">
                 <th>
                     <td>Descrição
                         <ul>
-                            <li><select name="lista" id="lista">
-                                <option value="Combustível">Combustível</option>
-                                <option value="Taxa">Taxa</option>
-                                <option value="Receita">Receita</option>
-                            </select></li>
-                            <li><select name="lista" id="lista">
-                                <option value="Combustível">Combustível</option>
-                                <option value="Taxa">Taxa</option>
-                                <option value="Receita">Receita</option>
-                            </select></li>
-                            <li><select name="lista" id="lista">
-                                <option value="Combustível">Combustível</option>
-                                <option value="Taxa">Taxa</option>
-                                <option value="Receita">Receita</option>
-                            </select></li>
+                            <li >
+                                
+                                <select  name="select"  id="li" >
+                                <option  id="col1" value="Combustível">Combustível</option>
+                                <option id="col2"  value="Taxa" >Taxa</option>
+                                <option id="col3"  value="Receita">Receita</option>
+                              
+                            </select>
+                            </li>
+                            
                           
                            
 
@@ -49,9 +44,11 @@
                 <th>
                     <td>Datas
                         <ul>
-                            <li><input type="date" name="data" id="data"></li>
-                            <li><input type="date" name="data" id="data"></li>
-                            <li><input type="date" name="data" id="data"></li>
+                            <li>
+                                <input type="date"  name="data" id="data"  >
+                            
+                            </li>
+                            
                            
 
                         </ul>
@@ -60,18 +57,18 @@
                 <th>
                     <td>Valores
                         <ul>
-                            <li><input type="number" name="combustivel" id="combustivel"></li>
-                            <li><input type="number" name="taxa" id="taxa"></li>
-                            <li><input type="number" name="receita" id="receita"></li>
+                            <li><input type="number" name="add" id="add" value="40.0"> <button onclick="addRow()"> +</button> </li>
+                           
                             
                            
                            
                         </ul>
                         
                     </td>
-                  
+                   
                     
                 </th>
+                
                 
             </table>
            
@@ -81,7 +78,7 @@
         <th>
             <td>Valores
                 <ul>
-                        <div id="total"></div> 
+                        <div id="total">Total................................:<strong></strong></div> 
                     
                    
                    
@@ -91,7 +88,7 @@
           
             
         </th>
-        <button type="submit" onclick="calcular()"> Calcular</button>  
+       
         <script src="./main.js">
            
         </script>
