@@ -1,4 +1,3 @@
-// Projeto Controle Financeiro para o Indrive
 
 // Projeto Controle Financeiro para o Indrive
 
@@ -10,13 +9,10 @@ function calcution(){
     const co=Number(c1.value)
     const ta=Number(t1.value)
     const re=Number(r1.value)
-     window.alert(co)
-     window.alert(ta)
-     window.alert(re)
-     const resultado = document.getElementById("total")
-     soma= co
-     const soma=String(soma).replace(".",",")
-     resultado.innerHTML=`TOTAL ......................................:<strong>R$${soma}</strong>`
+    alert(co)
+    alert(ta)
+    alert(re)
+   
 }
 
 function addRow(){
@@ -40,6 +36,17 @@ function addRow(){
  let col3= document.getElementById("add").value
  // Add data to c1 and c2
  c1.innerText = col1
- c2.innerText =String(day).concat("/").concat(month).concat("/").concat(year)
- c3.innerText = col3
+ c3.innerText =col3
+ 
+ if(col2===""){
+    c2.innerText= String(day +"/"+month+"/"+year)
+ }else{
+    //c2.innerText = String(col2).slice(-10).replace("-","/")
+    c2.innerText=String(col2)
+ }
+ 
+
+ calcution()
 }
+
+

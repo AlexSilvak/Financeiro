@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Financeiro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -12,82 +12,68 @@
 </head>
 <body>
 
+ <div class="conteiner1">
 
+<div><img  src="./fuel.png"  alt=""></div>
+<div><img  src="./taxa.png" alt=""></div>
+<div><img src="./lucro.png" alt=""></div>
 
-        <div class="a"> <!-- Wrapper class goes here -->
-            <div class="card">
-                <img class="card__img" src="" alt="">
-                <h4 class="card__subtitle">CONTROLE FINANCEIRO  INDRIVE</h4>
-                
-                
-            </div>
-            <table id="table">
-                <th>
-                    <td>Descrição
-                        <ul>
-                            <li >
-                                
-                                <select  name="select"  id="li" >
-                                <option  id="col1" value="Combustível">Combustível</option>
-                                <option id="col2"  value="Taxa" >Taxa</option>
-                                <option id="col3"  value="Receita">Receita</option>
-                              
-                            </select>
-                            </li>
-                            
-                          
-                           
+ </div>
+ <div class="conteiner2">
 
-                        </ul>
-                    </td>
-                </th>
-                <th>
-                    <td>Datas
-                        <ul>
-                            <li>
-                                <input type="date"  name="data" id="data"  >
-                            
-                            </li>
-                            
-                           
+    <div><strong>Combustível</strong></div>
+    <div><strong>Taxa</strong></div>
+    <div><strong>Lucro</strong></div>
+    
+     </div>
+     <div class="conteiner3">
 
-                        </ul>
-                    </td>
-                </th>
-                <th>
-                    <td>Valores
-                        <ul>
-                            <li><input type="number" name="add" id="add" value="40.0"> <button onclick="addRow()"> +</button> </li>
-                           
-                            
-                           
-                           
-                        </ul>
-                        
-                    </td>
-                   
-                    
-                </th>
-                
-                
-            </table>
-           
-           
-        </div>
+        <div><strong>R$200,00</strong></div>
+        <div><strong>R$200,00</strong></div>
+        <div><strong>R$200,00</strong></div>
         
-        <th>
-            <td>Valores
-                <ul>
-                        <div id="total">Total................................:<strong></strong></div> 
-                    
-                   
-                   
-                </ul>
-                
-            </td>
+         </div>
+
+         <select  name="select"  id="li" >
+            <option  id="col1" value="Combustível">Combustível</option>
+            <option id="col2"  value="Taxa" >Taxa</option>
+            <option id="col3"  value="Receita">Receita</option>
           
+        </select>
+        <input type="date"  name="data" id="data" >
+        <li><input type="number" name="add" id="add" value="0,00"> <button onclick="addRow()"> Adicionar</button> </li>
+
+<main>
+    <select  name="export"  id="export" >
+        <option  id="col1" value="csv">csv</option>
+        <option id="col2"  value="excel" >excel</option>
+        <option id="col3"  value="html">html</option>
+      
+    </select>
+        <button class="export">Export</button>
+        <table id="table">
             
-        </th>
+            
+            <th>
+                <td>
+                   
+                    
+                </td>
+               
+                
+            </th>
+            
+            
+        </table>
+       
+       
+   
+    
+    
+
+</main>
+
+   <!--JavaScript-->     
        
         <script src="./main.js">
            
