@@ -41,16 +41,20 @@
           
         </select>
         <input type="date"  name="data" id="data" >
-        <input type="number" name="add" id="add" value="0,00"> <button onclick="addRow()"> Adicionar</button> 
+        <input  class="val" type="number" name="add" id="add" value="0,00"> <button onclick="addRow()"> Adicionar</button> 
     </div>
 <main>
-    <select  name="export"  id="export" >
-        <option  id="col1" value="csv">csv</option>
-        <option id="col2"  value="excel" >excel</option>
-        <option id="col3"  value="html">html</option>
-      
-    </select>
-        <button class="export">Export</button>
+    
+       <div class="export">
+        <select  name="export"  id="export1" >
+            <option  id="col1" value="csv">csv</option>
+            <option id="col2"  value="excel" >excel</option>
+            <option id="col3"  value="html">html</option>
+          
+        </select>
+        <button class="export2">Export</button>
+    </div>
+ 
         <table id="table">
             <th>
                 
